@@ -40,7 +40,7 @@ After creating an empty public repository named `secureops-ics-rag` in the
 GitHub web interface:
 
 ```powershell
-git remote add origin https://github.com/YOUR_USERNAME/secureops-ics-rag.git
+git remote add origin https://github.com/xianzaren/secureops-ics-rag.git
 git push -u origin main
 ```
 
