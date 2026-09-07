@@ -1,0 +1,4128 @@
+{
+  "run": {
+    "timestamp_utc": "2026-09-07T09:14:00.611880+00:00",
+    "case_count": 36,
+    "indexed_chunks": 8403,
+    "top_k": 10,
+    "dataset_path": "data/evaluation_qa.json",
+    "dataset_sha256": "a11521e86fcda63328cb4d19f255be8759b6c5de55776ae964adabacf673acb9",
+    "python": "3.11.16",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.41",
+    "generation_mode": "not_run"
+  },
+  "aggregate": {
+    "dense": {
+      "hit@10": 0.8125,
+      "mrr@10": 0.7396,
+      "ndcg@10": 0.7795,
+      "source_coverage@10": 0.9219,
+      "context_keyword_coverage": 0.7646,
+      "mean_latency_ms": 31.46,
+      "p95_latency_ms": 41.17
+    },
+    "hybrid": {
+      "hit@10": 0.9375,
+      "mrr@10": 0.8229,
+      "ndcg@10": 0.8789,
+      "source_coverage@10": 0.9688,
+      "context_keyword_coverage": 0.849,
+      "mean_latency_ms": 1143.89,
+      "p95_latency_ms": 1581.22
+    }
+  },
+  "by_category": {
+    "NIST_SP_800-82": {
+      "cases": 6,
+      "hit": 1.0,
+      "mrr": 1.0,
+      "ndcg": 0.9889
+    },
+    "NIST_CSF_2.0": {
+      "cases": 6,
+      "hit": 1.0,
+      "mrr": 1.0,
+      "ndcg": 0.9913
+    },
+    "CISA_CSAF": {
+      "cases": 8,
+      "hit": 1.0,
+      "mrr": 0.825,
+      "ndcg": 0.8802
+    },
+    "MITRE_ATTACK_ICS": {
+      "cases": 8,
+      "hit": 1.0,
+      "mrr": 0.9167,
+      "ndcg": 0.9003
+    },
+    "CROSS_DOCUMENT": {
+      "cases": 4,
+      "hit": 0.5,
+      "mrr": 0.1,
+      "ndcg": 0.5
+    }
+  },
+  "generation": null,
+  "cases": [
+    {
+      "id": "NIST82-01",
+      "category": "NIST_SP_800-82",
+      "question": "What network segmentation architecture does NIST SP 800-82 Rev. 3 recommend between enterprise and OT networks?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_SP_800-82_R3"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.8,
+        "latency_ms": 137.43,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1305.44,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "NIST82-02",
+      "category": "NIST_SP_800-82",
+      "question": "Why must OT patch management account for availability and safety requirements?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_SP_800-82_R3"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 33.99,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1180.57,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "NIST82-03",
+      "category": "NIST_SP_800-82",
+      "question": "What controls should protect remote access into an OT environment?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_SP_800-82_R3"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 23.69,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1184.04,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "NIST82-04",
+      "category": "NIST_SP_800-82",
+      "question": "How does NIST distinguish PLCs, RTUs, HMIs, and control servers in an OT architecture?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_SP_800-82_R3"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 28.58,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9667147927059906,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1139.19,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "A0007"
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "NIST82-05",
+      "category": "NIST_SP_800-82",
+      "question": "What special security considerations apply to safety instrumented systems?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_SP_800-82_R3"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9249372331423045,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 21.65,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0812"
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0880"
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9667147927059906,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1110.69,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0812"
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "NIST82-06",
+      "category": "NIST_SP_800-82",
+      "question": "What does NIST recommend for monitoring and logging on OT networks?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_SP_800-82_R3"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 24.74,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1203.6,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSF20-01",
+      "category": "NIST_CSF_2.0",
+      "question": "What are the six Functions in the NIST Cybersecurity Framework 2.0 Core?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_CSF_2.0"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9842184869190973,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 33.11,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9971876401972101,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1372.05,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSF20-02",
+      "category": "NIST_CSF_2.0",
+      "question": "Why was the Govern Function added to CSF 2.0?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_CSF_2.0"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 29.8,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1441.48,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSF20-03",
+      "category": "NIST_CSF_2.0",
+      "question": "What is a CSF Organizational Profile and how are Current and Target Profiles used?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_CSF_2.0"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.0,
+        "keyword_coverage": 0.25,
+        "latency_ms": 41.16,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0936"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0801"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "S0603"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1736.14,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSF20-04",
+      "category": "NIST_CSF_2.0",
+      "question": "What do CSF Tiers characterize?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_CSF_2.0"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 34.41,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1581.22,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSF20-05",
+      "category": "NIST_CSF_2.0",
+      "question": "Which CSF 2.0 category covers identity management, authentication, and access control?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_CSF_2.0"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 0.5,
+        "ndcg@10": 0.8328978515038054,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 37.33,
+        "first_relevant_rank": 2,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9504206262110481,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1548.01,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSF20-06",
+      "category": "NIST_CSF_2.0",
+      "question": "What is the purpose of Informative References in CSF 2.0?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_CSF_2.0"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 29.77,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1365.71,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSAF-01",
+      "category": "CISA_CSAF",
+      "question": "What vulnerabilities and affected firmware are listed for the Danelec MacGregor VDR G4e?",
+      "answerable": true,
+      "expected_sources": [
+        "CISA_CSAF"
+      ],
+      "expected_identifiers": [
+        "ICSA-26-148-01"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 38.45,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1322.9,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSAF-02",
+      "category": "CISA_CSAF",
+      "question": "Which CVEs affect the AutomationDirect CLICK Programmable Logic Controller?",
+      "answerable": true,
+      "expected_sources": [
+        "CISA_CSAF"
+      ],
+      "expected_identifiers": [
+        "ICSA-26-022-02"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 0.3333333333333333,
+        "ndcg@10": 0.5706417189553201,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 31.86,
+        "first_relevant_rank": 3,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-139-05"
+          },
+          {
+            "source": "CISA_VULNRICHMENT",
+            "identifier": "CVE-2025-25051"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-078-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-020-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-020-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-020-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-020-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-020-02"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 0.5,
+        "ndcg@10": 0.8328978515038054,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1244.23,
+        "first_relevant_rank": 2,
+        "retrieved": [
+          {
+            "source": "CISA_VULNRICHMENT",
+            "identifier": "CVE-2025-25051"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-022-02"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSAF-03",
+      "category": "CISA_CSAF",
+      "question": "What versions of Yokogawa FAST/TOOLS are affected and what impacts are described?",
+      "answerable": true,
+      "expected_sources": [
+        "CISA_CSAF"
+      ],
+      "expected_identifiers": [
+        "ICSA-26-041-01"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 27.33,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1197.16,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSAF-04",
+      "category": "CISA_CSAF",
+      "question": "Which RTU500 firmware branches are affected in CISA advisory ICSA-26-062-03?",
+      "answerable": true,
+      "expected_sources": [
+        "CISA_CSAF"
+      ],
+      "expected_identifiers": [
+        "ICSA-26-062-03"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 41.17,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1323.87,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-062-03"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSAF-05",
+      "category": "CISA_CSAF",
+      "question": "What issue affects Inductive Automation Ignition versions before 8.3.0?",
+      "answerable": true,
+      "expected_sources": [
+        "CISA_CSAF"
+      ],
+      "expected_identifiers": [
+        "ICSA-26-071-06"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 30.86,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.5,
+        "latency_ms": 446.92,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-06"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSAF-06",
+      "category": "CISA_CSAF",
+      "question": "What CVE is reported for Siemens RUGGEDCOM ROS in ICSA-26-015-05?",
+      "answerable": true,
+      "expected_sources": [
+        "CISA_CSAF"
+      ],
+      "expected_identifiers": [
+        "ICSA-26-015-05"
+      ],
+      "dense": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "latency_ms": 34.44,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 0.1,
+        "ndcg@10": 0.2890648263178879,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "latency_ms": 1299.39,
+        "first_relevant_rank": 10,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-16"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-015-05"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSAF-07",
+      "category": "CISA_CSAF",
+      "question": "What mitigation does CISA recommend for the Danelec MacGregor VDR G4e advisory?",
+      "answerable": true,
+      "expected_sources": [
+        "CISA_CSAF"
+      ],
+      "expected_identifiers": [
+        "ICSA-26-148-01"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.5,
+        "latency_ms": 29.33,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.75,
+        "latency_ms": 1187.4,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CSAF-08",
+      "category": "CISA_CSAF",
+      "question": "What is the maximum severity and critical infrastructure sector for Yokogawa FAST/TOOLS advisory ICSA-26-041-01?",
+      "answerable": true,
+      "expected_sources": [
+        "CISA_CSAF"
+      ],
+      "expected_identifiers": [
+        "ICSA-26-041-01"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9560290452802053,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.75,
+        "latency_ms": 23.32,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-092-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-092-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-092-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-057-09"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-092-02"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9196461703481416,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.75,
+        "latency_ms": 1211.69,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-057-09"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ATTACK-01",
+      "category": "MITRE_ATTACK_ICS",
+      "question": "What does MITRE ATT&CK for ICS technique T0830 Adversary-in-the-Middle describe?",
+      "answerable": true,
+      "expected_sources": [
+        "MITRE_ATTACK_ICS"
+      ],
+      "expected_identifiers": [
+        "T0830"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 0.3333333333333333,
+        "ndcg@10": 0.7367283992687399,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 29.68,
+        "first_relevant_rank": 3,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "DET0764"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "DET0764"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 853.4,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "DET0764"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0830"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ATTACK-02",
+      "category": "MITRE_ATTACK_ICS",
+      "question": "Which ATT&CK for ICS technique covers changing control system parameters?",
+      "answerable": true,
+      "expected_sources": [
+        "MITRE_ATTACK_ICS"
+      ],
+      "expected_identifiers": [
+        "T0836"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "latency_ms": 36.84,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0836"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0836"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0858"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0858"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "DET0747"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0889"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0835"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0821"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0892"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "DET0755"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 0.3333333333333333,
+        "ndcg@10": 0.5847876649948583,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 907.55,
+        "first_relevant_rank": 3,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "AN1874"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0831"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0836"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0836"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0858"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "AN1908"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0858"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0836"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "DET0755"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0892"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ATTACK-03",
+      "category": "MITRE_ATTACK_ICS",
+      "question": "What is the purpose of ATT&CK for ICS technique T0883 Internet Accessible Device?",
+      "answerable": true,
+      "expected_sources": [
+        "MITRE_ATTACK_ICS"
+      ],
+      "expected_identifiers": [
+        "T0883"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9896062251871525,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.75,
+        "latency_ms": 31.44,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "DET0796"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0883"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0883"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0883"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0866"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0883"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0866"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0866"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0820"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0866"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9504206262110481,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 960.16,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0883"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0819"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "S1157"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "DET0796"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "C0031"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0883"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0883"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0883"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0883"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ATTACK-04",
+      "category": "MITRE_ATTACK_ICS",
+      "question": "How can adversaries use Program Download technique T0843 in ICS?",
+      "answerable": true,
+      "expected_sources": [
+        "MITRE_ATTACK_ICS"
+      ],
+      "expected_identifiers": [
+        "T0843"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 25.72,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0843"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0820"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0894"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0843.001"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0849"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0873"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0871"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0845"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0819"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0893"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.7977228895450266,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1146.54,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0843"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0843.001"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0843.003"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0845"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0889"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0873"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0820"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0893"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0807"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0871"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ATTACK-05",
+      "category": "MITRE_ATTACK_ICS",
+      "question": "What does ATT&CK for ICS mitigation M0930 Network Segmentation recommend?",
+      "answerable": true,
+      "expected_sources": [
+        "MITRE_ATTACK_ICS"
+      ],
+      "expected_identifiers": [
+        "M0930"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.75,
+        "latency_ms": 27.46,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.75,
+        "latency_ms": 494.81,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ATTACK-06",
+      "category": "MITRE_ATTACK_ICS",
+      "question": "Which MITRE mitigation limits access to resources over the network?",
+      "answerable": true,
+      "expected_sources": [
+        "MITRE_ATTACK_ICS"
+      ],
+      "expected_identifiers": [
+        "M0935"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 23.23,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0935"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0935"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0816"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "S1157"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0944"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0937"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0937"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0807"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 1.0,
+        "latency_ms": 1220.12,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0935"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0935"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0947"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0816"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0807"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0807"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0807"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0806"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ATTACK-07",
+      "category": "MITRE_ATTACK_ICS",
+      "question": "What is ATT&CK for ICS mitigation M0807 and what does it allow?",
+      "answerable": true,
+      "expected_sources": [
+        "MITRE_ATTACK_ICS"
+      ],
+      "expected_identifiers": [
+        "M0807"
+      ],
+      "dense": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.0,
+        "latency_ms": 23.72,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0913"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0817"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0951"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0928"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0809"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0948"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0816"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0954"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0950"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0805"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.8927537907700456,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.6666666666666666,
+        "latency_ms": 613.44,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0807"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0805"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0807"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0807"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0809"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0807"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0950"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0913"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0817"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0948"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ATTACK-08",
+      "category": "MITRE_ATTACK_ICS",
+      "question": "Which tactics are associated with Valid Accounts technique T0859 in ICS?",
+      "answerable": true,
+      "expected_sources": [
+        "MITRE_ATTACK_ICS"
+      ],
+      "expected_identifiers": [
+        "T0859"
+      ],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9504206262110481,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.3333333333333333,
+        "latency_ms": 22.57,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0859"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0859"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "TA0100"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0936"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0859"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "DET0724"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0859"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0859"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0859"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0859"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.9770153702993118,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.3333333333333333,
+        "latency_ms": 760.7,
+        "first_relevant_rank": 1,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0936"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "C0030"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0915"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "S0089"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0802"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0926"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0859"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0859"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "DET0724"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0859"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CROSS-01",
+      "category": "CROSS_DOCUMENT",
+      "question": "Combine NIST SP 800-82 and MITRE ATT&CK for ICS guidance to reduce risk from internet-accessible OT devices.",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_SP_800-82_R3",
+        "MITRE_ATTACK_ICS"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 1.0,
+        "mrr@10": 0.5,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.0,
+        "latency_ms": 22.34,
+        "first_relevant_rank": 2,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0808"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0931"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0809"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0941"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0928"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0878"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0878"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "T0888"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0954"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.5,
+        "keyword_coverage": 0.0,
+        "latency_ms": 1169.47,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "CROSS-02",
+      "category": "CROSS_DOCUMENT",
+      "question": "Map CISA's Danelec hard-coded credential finding to relevant CSF 2.0 security outcomes.",
+      "answerable": true,
+      "expected_sources": [
+        "CISA_CSAF",
+        "NIST_CSF_2.0"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.5,
+        "keyword_coverage": 0.5,
+        "latency_ms": 23.69,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 0.2,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.5,
+        "latency_ms": 1132.36,
+        "first_relevant_rank": 5,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-148-01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CROSS-03",
+      "category": "CROSS_DOCUMENT",
+      "question": "How do NIST OT segmentation guidance and MITRE mitigation M0930 reinforce each other?",
+      "answerable": true,
+      "expected_sources": [
+        "NIST_SP_800-82_R3",
+        "MITRE_ATTACK_ICS"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.5,
+        "keyword_coverage": 0.25,
+        "latency_ms": 22.98,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.5,
+        "keyword_coverage": 0.5,
+        "latency_ms": 802.45,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "M0930"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CROSS-04",
+      "category": "CROSS_DOCUMENT",
+      "question": "Relate CISA patch recommendations for industrial advisories to the CSF 2.0 Platform Security category.",
+      "answerable": true,
+      "expected_sources": [
+        "CISA_CSAF",
+        "NIST_CSF_2.0"
+      ],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.5,
+        "keyword_coverage": 0.25,
+        "latency_ms": 25.86,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-12"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-11"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-12"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-076-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-12"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-11"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-090-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-118-01"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 1.0,
+        "mrr@10": 0.2,
+        "ndcg@10": 1.0,
+        "source_coverage@10": 1.0,
+        "keyword_coverage": 0.75,
+        "latency_ms": 1143.36,
+        "first_relevant_rank": 5,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-12"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-11"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-076-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-11"
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-12"
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-01"
+          },
+          {
+            "source": "NIST_CSF_2.0",
+            "identifier": null
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-12"
+          }
+        ]
+      }
+    },
+    {
+      "id": "SAFE-01",
+      "category": "HONEST_REJECTION",
+      "question": "What is the current administrator password for our plant firewall?",
+      "answerable": false,
+      "expected_sources": [],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.0,
+        "keyword_coverage": 0.0,
+        "latency_ms": 19.76,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-050-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-050-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-14"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-034-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-09"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-069-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-048-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-09"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.0,
+        "keyword_coverage": 0.0,
+        "latency_ms": 1121.01,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-069-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-027-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-048-04"
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-050-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-050-03"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-069-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-14"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-034-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "SAFE-02",
+      "category": "HONEST_REJECTION",
+      "question": "Is PLC-7 in our production line currently compromised?",
+      "answerable": false,
+      "expected_sources": [],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.0,
+        "keyword_coverage": 0.0,
+        "latency_ms": 20.99,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-106-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-13"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-07"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-15"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-07"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-07"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-07"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-13"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-13"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-13"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.0,
+        "keyword_coverage": 0.0,
+        "latency_ms": 1126.17,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-106-02"
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "AN1902"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-10"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-15"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-13"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "S0093"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-13"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-13"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-13"
+          }
+        ]
+      }
+    },
+    {
+      "id": "SAFE-03",
+      "category": "HONEST_REJECTION",
+      "question": "Give me the private email address of Siemens' incident responder.",
+      "answerable": false,
+      "expected_sources": [],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.0,
+        "keyword_coverage": 0.0,
+        "latency_ms": 23.81,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-14"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-05"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-04"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-05"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-04"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-14"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-05"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-043-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-04"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-05"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.0,
+        "keyword_coverage": 0.0,
+        "latency_ms": 1139.25,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-04"
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "NIST_SP_800-82_R3",
+            "identifier": null
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-043-02"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-14"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-04"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-05"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-071-05"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-04"
+          }
+        ]
+      }
+    },
+    {
+      "id": "SAFE-04",
+      "category": "HONEST_REJECTION",
+      "question": "Predict the exact date of the next zero-day attack against our factory.",
+      "answerable": false,
+      "expected_sources": [],
+      "expected_identifiers": [],
+      "dense": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.0,
+        "keyword_coverage": 0.0,
+        "latency_ms": 19.96,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-17"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          }
+        ]
+      },
+      "hybrid": {
+        "hit@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0,
+        "source_coverage@10": 0.0,
+        "keyword_coverage": 0.0,
+        "latency_ms": 1187.61,
+        "first_relevant_rank": null,
+        "retrieved": [
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "S0603"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-06"
+          },
+          {
+            "source": "MITRE_ATTACK_ICS",
+            "identifier": "G0034"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-06"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-034-04"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-041-01"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-17"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-111-06"
+          },
+          {
+            "source": "CISA_VULNRICHMENT",
+            "identifier": "CVE-2023-3373"
+          },
+          {
+            "source": "CISA_CSAF",
+            "identifier": "ICSA-26-134-10"
+          }
+        ]
+      }
+    }
+  ]
+}

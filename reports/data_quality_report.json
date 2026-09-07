@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-09-07T08:14:28.167633+00:00",
+  "input_file": "cve_combined.csv",
+  "strategy": "full_scan_ot_relevance_then_quality_rank",
+  "minimum_score": 45,
+  "requested_limit": 2000,
+  "source_rows": 119864,
+  "invalid_rows": 0,
+  "duplicate_rows": 0,
+  "excluded_non_ot_or_low_quality": 117164,
+  "eligible_unique_rows": 2700,
+  "selected_rows": 2000,
+  "known_exploited_selected": 36,
+  "severity_distribution": {
+    "HIGH": 1263,
+    "MEDIUM": 412,
+    "CRITICAL": 304,
+    "LOW": 19,
+    "UNKNOWN": 2
+  },
+  "publication_year_distribution": {
+    "2026": 119,
+    "2025": 542,
+    "2024": 485,
+    "2023": 593,
+    "2022": 242,
+    "2021": 5,
+    "2020": 2,
+    "2019": 7,
+    "2018": 1,
+    "2017": 2,
+    "2015": 2
+  },
+  "top_vendors": {
+    "Siemens": 738,
+    "Schneider Electric": 163,
+    "Delta Electronics": 137,
+    "Rockwell Automation": 133,
+    "Hitachi Energy": 70,
+    "ABB": 64,
+    "Advantech": 63,
+    "Mitsubishi Electric Corporation": 59,
+    "CODESYS": 54,
+    "Moxa": 54,
+    "PHOENIX CONTACT": 53,
+    "Honeywell": 52,
+    "Schweitzer Engineering Laboratories": 45,
+    "Johnson Controls": 38,
+    "Phoenix Contact": 38
+  },
+  "score": {
+    "minimum": 55,
+    "maximum": 92,
+    "average": 63.25
+  }
+}
